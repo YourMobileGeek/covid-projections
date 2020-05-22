@@ -85,17 +85,7 @@ export default function App() {
 
             {/** Internal endpoints we use to generate the content that we want to
             screenshot for our social sharing images (OpenGraph / Twitter Card). */}
-            <Route exact path="/internal/share-image/" component={ShareImage} />
-            <Route
-              exact
-              path="/internal/share-image/states/:stateId"
-              component={ShareImage}
-            />
-            <Route
-              exact
-              path="/internal/share-image/counties/:countyFipsId"
-              component={ShareImage}
-            />
+            <Route path="/internal/share-image/" component={ShareImage} />
 
             <Route path="/*">
               <Redirect to="/" />
